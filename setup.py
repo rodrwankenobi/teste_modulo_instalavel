@@ -1,5 +1,8 @@
 from setuptools import setup, find_packages
 
+def read(filename):
+    return [req.strip() for req in open(filename).readlines()]
+
 setup(
     name="modulo_instalavel",
     version="0.1.0",
